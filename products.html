@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Store</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="header-title">
+        <h1>Nintendo Webshop</h1>
+      </div>
+      <div class="header-nav">
+        <nav>
+          <ul>
+            <li class="headeroptions"><a href="index.html">Home</a></li>
+            <li class="headeroptions"><a href="products.html">Products</a></li>
+            <li class="headeroptions"><a href="price.html">Product2</a></li>
+            <li class="headeroptions"><a href="cart.html"><img src="img/cart.png" alt=""></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <h1>Game Store</h1>
+  
+  <div class="filter-section">
+    <h2>Filter by Category</h2>
+    <label>
+      <input type="checkbox" id="checkbox-farming" class="filter" checked>
+      Mario
+    </label>
+    <label>
+      <input type="checkbox" id="checkbox-gta" class="filter" checked>
+      Switch
+    </label>
+    <label>
+      <input type="checkbox" id="checkbox-sport" class="filter" checked>
+      3DS
+    </label>
+  </div>
+  
+  <div class="game-list">
+    <div class="game" data-category="farming">
+      <h3>Game 1</h3>
+      <p>Category: Mariogame</p>
+      <p>Price: $19.99</p>
+      <button class="add-to-cart" data-id="1" data-name="Mariogame" data-price="19.99">Add to Cart</button>
+      <img src="img/Mariogame.webp" alt="">
+    </div>
+    <div class="game" data-category="gta">
+      <h3>Game 2</h3>
+      <p>Category: Nintendo switch</p>
+      <p>Price: $399.99</p>
+      <button class="add-to-cart" data-id="2" data-name="Nintendo switch" data-price="399.99">Add to Cart</button>
+      <img src="img/switch.webp" alt="">
+    </div>
+    <div class="game" data-category="sport">
+      <h3>Game 3</h3>
+      <p>Category: Nintendo 3ds</p>
+      <p>Price: $249.99</p>
+      <button class="add-to-cart" data-id="3" data-name="Nintendo 3ds" data-price="249.99">Add to Cart</button>
+      <img src="img/nintendo2.png" alt="">
+    </div>
+  </div>
+  
+  <ul class="cart" id="cart-items"></ul>
+  
+  <script src="script.js"></script>
+</body>
+</html>

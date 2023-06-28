@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Price Filter</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="header-title">
+        <h1>Nintendo Webshop</h1>
+      </div>
+      <div class="header-nav">
+        <nav>
+          <ul>
+            <li class="headeroptions"><a href="index.html">Home</a></li>
+            <li class="headeroptions"><a href="products.html">Products</a></li>
+            <li class="headeroptions"><a href="price.html">Product2</a></li>
+            <li class="headeroptions"><a href="cart.html"><img src="img/cart.png" alt=""></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <h1>Product List</h1>
+
+  <label for="min-price">Minimum Price:</label>
+  <input type="number" id="min-price" min="0">
+
+  <label for="max-price">Maximum Price:</label>
+  <input type="number" id="max-price" min="0">
+
+  <button onclick="filterProducts()">Filter</button>
+
+  <ul class="products-list" id="product-list">
+    <div class="products-list" id="games">
+        <div class="game" data-price="10" data-category="Nintenod 3ds">
+          <h3 class="product-item-name">Nintendo 3ds</h3>
+          <p class="product-item-price">Price: $249,99</p>
+          <li class="product-item" data-price="249"><img src="img/nintendo2.png" alt=""></li>
+          <button class="add-to-cart product-item-cart" data-id="1" data-name="Nintendo 3ds" data-price="249">Add to Cart</button>
+    </div>
+    <div id="games">
+      <div class="game" data-price="10" data-category="Nintendo switch">
+        <h3 class="product-item-name">Nintendo switch</h3>
+        <p class="product-item-price">Price: $399,99</p>
+        <li class="product-item" data-price="399"><img src="img/switch.webp" alt=""></li>
+        <button class="add-to-cart product-item-cart" data-id="1" data-name="Nintendo switch" data-price="399">Add to Cart</button>
+  </div>
+  </ul>
+
+  <footer>
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h4>Customer Service</h4>
+            <ul>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Order Status</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">Shipping</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h4>Shop</h4>
+            <ul>
+              <li><a href="#">All Categories</a></li>
+              <li><a href="#">Computers & Tablets</a></li>
+              <li><a href="#">TV & Audio</a></li>
+              <li><a href="#">Cameras & Drones</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h4>About Us</h4>
+            <ul>
+              <li><a href="#">About Nintendo</a></li>
+              <li><a href="#">Career Opportunities</a></li>
+              <li><a href="#">Company News</a></li>
+              <li><a href="#">Investor Relations</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h4>Follow Us</h4>
+            <ul class="social-icons">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p>&copy; 2023 My Webshop. All rights reserved.</p>
+          </div>
+          <div class="col-md-6">
+            <ul class="footer-links">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="price.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
